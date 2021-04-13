@@ -2,10 +2,10 @@ if [ -z "$1" ]; then
 	echo "Expected input ./pm [Comment]"
 	exit 0
 fi
-$comment = $1
-$1 = 0
-$2 = 0
-$3 = 0
+$comment=$1
+$1=0
+$2=0
+$3=0
 echo "Creating module push with comment: $comment"
 git checkout module
 git rebase master
