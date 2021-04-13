@@ -11,6 +11,8 @@ git add .
 git commit -m $1
 git push origin module
 git checkout master
+git add .
+git reset --hard
 
 #Plugins tries to put everything in the lower level to easily merge plugins.
 git checkout plugins
@@ -20,3 +22,5 @@ git add .
 git commit -m $1 
 git push pluginsref plugins
 git checkout master
+git add .
+git reset --hard
